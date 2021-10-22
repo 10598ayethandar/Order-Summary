@@ -62,6 +62,7 @@
   }
   #change{
    color: hsl(245, 75%, 52%);
+   font-weight:bold;
     float:right;
     font-size:14px;
   }
