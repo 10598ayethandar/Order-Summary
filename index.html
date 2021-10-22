@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     body{
+       background-image:url('images/pattern-background-desktop.svg');
+      background-repeat:no-repeat;
+      font-family:"Red Hat Display",sans-serif;
+      background-color:hsl(225, 100%, 94%);
+      min-height:100vh;
+    }
+    #main{
+     margin-top: 180px;
+     margin-left: 500px;
+      width: 350px;
+      height:570px;
+      border-radius: 15px;
+      background-color: white;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #girl{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    p{
+      padding:15px;
+    font-size:16px;
+    color:hsl(224, 23%, 55%);
+  }
+  h2,#title{
+    color:hsl(223, 47%, 23%);
+  }
+  #musicBar{
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 12px;
+    margin:auto;
+    padding:8px;
+    width:300px;
+  }
+  table{
+    width:300px;
+  }
+  #subPay{
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:white;
+    border-radius: 12px;
+    margin:auto;
+    padding:10px;
+    width:320px;
+    cursor:pointer;
+    font-weight: bold;
+    font-size:14px;
+  }
+  #cancelOrder{
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+    font-weight: bold;
+    font-size:13px;
+  }
+  #dollar{
+    color:hsl(224, 23%, 55%);
+  }
+  #change{
+    float:right;
+    font-size:14px;
+  }
+  #money{float:left;}
+  #title{
+    font-weight:bold;
+    font-size:16px;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+<div id="main">
+<img src="images/illustration-hero.svg" width="350px" id="girl" alt="girl listening music">
+
+<h2>Order Summary</h2>
+
+  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+<div id="musicBar">
+  <table>
+    <tr>
+      <td><img src="images/icon-music.svg" alt="music-icon" aria-hidden="true"/></td>
+      <td id="money">
+        <span id="title">
+          Annual Plan
+        </span>  <br>
+        <span id="dollar">
+          $59.99/year
+        </span> 
+      </td>
+      <td> <a href="#.html" id="change">Change</a></td>
+    </tr>
+  </table>
+</div>
+<br>
+ <div>
+  <button id="subPay">Proceed to Payment</button>
+ </div>
+ <br>
+  <a href="#.html" id="cancelOrder">Cancel Order</a>
+  </div>
+  <br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/10598ayethandar" target="_blank">Aye Thandar</a>.
+  </div>
+</body>
+</html>
